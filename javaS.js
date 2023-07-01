@@ -1,10 +1,8 @@
-let value = +prompt('Введите значение');
-if (typeof value === 'number' && !isNaN(value)) {
-  if (value % 2 === 0) {
-    console.log('Четное число')
-  } else {
-    console.log('Нечетное число')
-  }
-} else {
-  console.log ('Упс, кажется, вы ошиблись')
+let myMap = new Map();
+myMap.set('div', 'class');
+myMap.set('style', 'margin');
+myMap.set('js', 6);
+
+for (let [keys, values] of myMap) {
+  console.log(`${keys}, ${values}`)
 }
